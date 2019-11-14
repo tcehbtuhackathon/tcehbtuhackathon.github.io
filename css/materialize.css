@@ -1,207 +1,8 @@
 /*!
- * Materialize v1.0.0 (http://materializecss.com)
+ * Materialize v1.0.0-rc.1 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
-
-.column34 {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-}
-.column33 {
-  float: left;
-  width: 33%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row34 {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row34:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column34 {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-.card343 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-/* Style the counter cards */
-.card34 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: right;
-  background-color: #6364a4;
-}
-.three
-{
-	background-image:url("images/contact1.jpg");
-	height:100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-   padding-top: 130px;
-}
-.column1 {
- float: left;
-  width:20%;
-  color: #26a69a;
-  padding-left: 40px;
-}
-.column2 {
- float: left;
-  width:20%;
-  color: #26a69a;
-  padding-left: 40px;
-}
-hr
-{
-  border: 2px solid #5df542;
-  border-radius: 3px;
-  width: 30%;
-  margin-left: 5;
-}
-footer{
-background-color:black;
-text-align: center;
-}
-.title {
-  color: grey;
-  font-size: 18px;
-}
-.column3 {
-  float: left;
-  width:20%;
-  padding: 5px;
-}
- @media screen and (max-width: 500px) {
-  .column3 {
-    width: 100%;
-  }
-}
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: green;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  font-size: 24px;
-  color: black;
-}
-
-button:hover, a:hover {
-  opacity: 0.7;
-}
-#Theme
-{
-	background-color:;
-   color:white;
-   height: 600px;
-   text-align: center;
-   margin-top: -20px;
-}
-
-.column11 {
- float: left;
-  width:20%;
-  color: #5df542;
-  padding-left: 40px;
-}
-.column12 {
- float: left;
-  width:20%;
-  color: #5df542;
-  padding-left: 40px;
-}
-.theme
-{
-	font-size:20px;
-	color:black;
-}
-#t1
-{
-	font-size: 40px;
-	font-family:Rockwell;
-	color:#5df542;
-}
-#txt1
-{
-	font-size:20px;
-	color:black;
-	padding-top: 10px;
-}
-#txt2
-{
-	font-size:20px;
-	color:black;
-}
-#txt
-{
-	color:#5df542;font-size: 18px;
-}
-#txt3
-{
-	color:#830000;
-	font-size: 30px;
-	font-weight: bold;
-}
-.column {
-  float: left;
-  max-width: 1500px;
-  padding: 0 10px;
-}
-
-@media screen and (max-width: 1000px) {
-  .column {
-    width: 100%;
-	
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-.svg1
-{
-  height: 48px;
-  margin: 0 2em;
-  fill: darkorange;
-
-}
-.image_one p
-{ 
-	color:black;
-	justify-content: center;
-	font-family:Rockwell;
-	font-weight: bold;
-	font-size: 20px;
-}
-.in_one p
-{ 
-	justify-content: center;
-	font-family:Rockwell;
-	font-size: 20px;
-}
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -847,7 +648,7 @@ button:hover, a:hover {
 }
 
 .blue-text {
-  color: #ffffff !important;
+  color: #2196F3 !important;
 }
 
 .blue.lighten-5 {
@@ -1219,7 +1020,7 @@ button:hover, a:hover {
 }
 
 .teal.lighten-1 {
-  background-color: #fefacb !important;
+  background-color: #26a69a !important;
 }
 
 .teal-text.text-lighten-1 {
@@ -1407,7 +1208,7 @@ button:hover, a:hover {
 }
 
 .light-green-text {
-  color: #facc5b !important;
+  color: #8bc34a !important;
 }
 
 .light-green.lighten-5 {
@@ -2315,8 +2116,7 @@ button:hover, a:hover {
 }
 
 .black {
-  background-color: #fefacb !important;
-  /*background-color: #000000 !important;*/
+  background-color: #000000 !important;
 }
 
 .black-text {
@@ -2453,9 +2253,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-     -moz-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -3170,12 +2968,11 @@ ul.staggered-list li {
 }
 
 table, th, td {
-  border:  1px solid black;
-  align: center;
+  border: none;
 }
 
 table {
-  width:400;
+  width: 100%;
   display: table;
   border-collapse: collapse;
   border-spacing: 0;
@@ -3205,9 +3002,7 @@ table.highlight > tbody > tr:hover {
 table.centered thead tr th, table.centered tbody tr td {
   text-align: center;
 }
-i.icon-red {
-    color: red;
-}
+
 tr {
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
@@ -3215,7 +3010,7 @@ tr {
 td, th {
   padding: 15px 5px;
   display: table-cell;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   border-radius: 2px;
 }
@@ -3554,13 +3349,7 @@ input[type=range] + .thumb {
   margin-left: auto;
   margin-right: auto;
 }
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 3000px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-}
+
 .truncate {
   display: block;
   white-space: nowrap;
@@ -3578,7 +3367,7 @@ span.badge {
   margin-left: 14px;
   text-align: center;
   font-size: 1rem;
-  line-height: 20px;
+  line-height: 22px;
   height: 22px;
   color: #757575;
   float: right;
@@ -3651,7 +3440,7 @@ table span.badge {
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 95%;
+    width: 70%;
   }
 }
 
@@ -3661,7 +3450,6 @@ table span.badge {
 }
 
 .section {
-	text-align: justify;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -4539,7 +4327,6 @@ nav .sidenav-trigger i {
 }
 
 nav .brand-logo {
-	margin-top: 6px;
   position: absolute;
   color: #fff;
   display: inline-block;
@@ -4588,7 +4375,7 @@ nav .brand-logo i.material-icons {
 nav .nav-title {
   display: inline-block;
   font-size: 32px;
-  padding: 20px 0;
+  padding: 28px 0;
 }
 
 nav ul {
@@ -4612,14 +4399,14 @@ nav ul a {
   font-size: 1rem;
   color: #fff;
   display: block;
-  padding: 0 08px;
+  padding: 0 15px;
   cursor: pointer;
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-small, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
   margin-top: -2px;
   margin-left: 15px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-small > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.btn-flat > .material-icons, nav ul a.btn-floating > .material-icons {
@@ -4687,11 +4474,11 @@ nav .input-field label.active i {
     min-height: 64px;
   }
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
-    height: 90px;
-    line-height: 90px;
+    height: 64px;
+    line-height: 64px;
   }
   .navbar-fixed {
-    height: 90px;
+    height: 64px;
   }
 }
 
@@ -4701,7 +4488,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: GillSans, Calibri, Trebuchet, sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -4714,13 +4501,13 @@ html {
 
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 14.5px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
@@ -4952,12 +4739,16 @@ small {
   border-radius: 2px;
   background-color: #fff;
 }
-/* Style the counter cards */
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #fefacb;
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
 }
 
 .card .card-title {
@@ -5396,8 +5187,8 @@ small {
 .btn-small:disabled,
 .btn-flat:disabled,
 .btn[disabled],
-.btn-large[disabled],
-.btn-small[disabled],
+[disabled].btn-large,
+[disabled].btn-small,
 .btn-floating[disabled],
 .btn-large[disabled],
 .btn-small[disabled],
@@ -5423,8 +5214,8 @@ small {
 .btn-small:disabled:hover,
 .btn-flat:disabled:hover,
 .btn[disabled]:hover,
-.btn-large[disabled]:hover,
-.btn-small[disabled]:hover,
+[disabled].btn-large:hover,
+[disabled].btn-small:hover,
 .btn-floating[disabled]:hover,
 .btn-large[disabled]:hover,
 .btn-small[disabled]:hover,
@@ -5458,7 +5249,7 @@ small {
 
 .btn, .btn-large, .btn-small {
   text-decoration: none;
-  color: #830000;
+  color: #fff;
   background-color: #26a69a;
   text-align: center;
   letter-spacing: .5px;
@@ -5970,10 +5761,6 @@ body.keyboard-focused .dropdown-content li:focus {
   will-change: top, opacity;
 }
 
-.modal:focus {
-  outline: none;
-}
-
 @media only screen and (max-width: 992px) {
   .modal {
     width: 80%;
@@ -6320,9 +6107,6 @@ label {
 :-ms-input-placeholder {
   color: #d1d1d1;
 }
-::-ms-input-placeholder {
-  color: #d1d1d1;
-}
 ::placeholder {
   color: #d1d1d1;
 }
@@ -6503,28 +6287,28 @@ textarea.materialize-textarea.validate + label {
 
 /* Validation Sass Placeholders */
 input.valid:not([type]), input.valid:not([type]):focus,
-input.valid[type=text]:not(.browser-default),
-input.valid[type=text]:not(.browser-default):focus,
-input.valid[type=password]:not(.browser-default),
-input.valid[type=password]:not(.browser-default):focus,
-input.valid[type=email]:not(.browser-default),
-input.valid[type=email]:not(.browser-default):focus,
-input.valid[type=url]:not(.browser-default),
-input.valid[type=url]:not(.browser-default):focus,
-input.valid[type=time]:not(.browser-default),
-input.valid[type=time]:not(.browser-default):focus,
-input.valid[type=date]:not(.browser-default),
-input.valid[type=date]:not(.browser-default):focus,
-input.valid[type=datetime]:not(.browser-default),
-input.valid[type=datetime]:not(.browser-default):focus,
-input.valid[type=datetime-local]:not(.browser-default),
-input.valid[type=datetime-local]:not(.browser-default):focus,
-input.valid[type=tel]:not(.browser-default),
-input.valid[type=tel]:not(.browser-default):focus,
-input.valid[type=number]:not(.browser-default),
-input.valid[type=number]:not(.browser-default):focus,
-input.valid[type=search]:not(.browser-default),
-input.valid[type=search]:not(.browser-default):focus,
+input[type=text].valid:not(.browser-default),
+input[type=text].valid:not(.browser-default):focus,
+input[type=password].valid:not(.browser-default),
+input[type=password].valid:not(.browser-default):focus,
+input[type=email].valid:not(.browser-default),
+input[type=email].valid:not(.browser-default):focus,
+input[type=url].valid:not(.browser-default),
+input[type=url].valid:not(.browser-default):focus,
+input[type=time].valid:not(.browser-default),
+input[type=time].valid:not(.browser-default):focus,
+input[type=date].valid:not(.browser-default),
+input[type=date].valid:not(.browser-default):focus,
+input[type=datetime].valid:not(.browser-default),
+input[type=datetime].valid:not(.browser-default):focus,
+input[type=datetime-local].valid:not(.browser-default),
+input[type=datetime-local].valid:not(.browser-default):focus,
+input[type=tel].valid:not(.browser-default),
+input[type=tel].valid:not(.browser-default):focus,
+input[type=number].valid:not(.browser-default),
+input[type=number].valid:not(.browser-default):focus,
+input[type=search].valid:not(.browser-default),
+input[type=search].valid:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
   border-bottom: 1px solid #4CAF50;
@@ -6533,28 +6317,28 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-
 }
 
 input.invalid:not([type]), input.invalid:not([type]):focus,
-input.invalid[type=text]:not(.browser-default),
-input.invalid[type=text]:not(.browser-default):focus,
-input.invalid[type=password]:not(.browser-default),
-input.invalid[type=password]:not(.browser-default):focus,
-input.invalid[type=email]:not(.browser-default),
-input.invalid[type=email]:not(.browser-default):focus,
-input.invalid[type=url]:not(.browser-default),
-input.invalid[type=url]:not(.browser-default):focus,
-input.invalid[type=time]:not(.browser-default),
-input.invalid[type=time]:not(.browser-default):focus,
-input.invalid[type=date]:not(.browser-default),
-input.invalid[type=date]:not(.browser-default):focus,
-input.invalid[type=datetime]:not(.browser-default),
-input.invalid[type=datetime]:not(.browser-default):focus,
-input.invalid[type=datetime-local]:not(.browser-default),
-input.invalid[type=datetime-local]:not(.browser-default):focus,
-input.invalid[type=tel]:not(.browser-default),
-input.invalid[type=tel]:not(.browser-default):focus,
-input.invalid[type=number]:not(.browser-default),
-input.invalid[type=number]:not(.browser-default):focus,
-input.invalid[type=search]:not(.browser-default),
-input.invalid[type=search]:not(.browser-default):focus,
+input[type=text].invalid:not(.browser-default),
+input[type=text].invalid:not(.browser-default):focus,
+input[type=password].invalid:not(.browser-default),
+input[type=password].invalid:not(.browser-default):focus,
+input[type=email].invalid:not(.browser-default),
+input[type=email].invalid:not(.browser-default):focus,
+input[type=url].invalid:not(.browser-default),
+input[type=url].invalid:not(.browser-default):focus,
+input[type=time].invalid:not(.browser-default),
+input[type=time].invalid:not(.browser-default):focus,
+input[type=date].invalid:not(.browser-default),
+input[type=date].invalid:not(.browser-default):focus,
+input[type=datetime].invalid:not(.browser-default),
+input[type=datetime].invalid:not(.browser-default):focus,
+input[type=datetime-local].invalid:not(.browser-default),
+input[type=datetime-local].invalid:not(.browser-default):focus,
+input[type=tel].invalid:not(.browser-default),
+input[type=tel].invalid:not(.browser-default):focus,
+input[type=number].invalid:not(.browser-default),
+input[type=number].invalid:not(.browser-default):focus,
+input[type=search].invalid:not(.browser-default),
+input[type=search].invalid:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown,
 .select-wrapper.invalid > input.select-dropdown:focus {
@@ -6758,7 +6542,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
           transform-origin: 0 0;
 }
 
-.input-field > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+.input-field > input[type]:-webkit-autofill:not(.browser-default) + label,
 .input-field > input[type=date]:not(.browser-default) + label,
 .input-field > input[type=time]:not(.browser-default) + label {
   -webkit-transform: translateY(-14px) scale(0.8);
