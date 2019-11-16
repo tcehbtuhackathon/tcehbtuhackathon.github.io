@@ -29,20 +29,33 @@ p {
     width: 100%;
   }
 
-@media only screen and (max-width : 992px) {
+@media only screen and (min-width : 601px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
   }
   #index-banner .section {
-    top: 10%;
+    top: 0px;
+    padding: 0%;
+  }
+  #index-banner .section .banner-image {
+    height: 57vh;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
-    top: 0;
+    top: 0px;
+    padding: 0%;
   }
+  #index-banner .section .banner-image {
+    height: 40vh;
+  }
+}
+
+#index-banner .section {
+  margin: -15px;
 }
 
 .icon-block {
