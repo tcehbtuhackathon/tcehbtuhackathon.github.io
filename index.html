@@ -8,6 +8,7 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 </head>
@@ -15,31 +16,29 @@
 <body class="red darken-4">
   <!-- Navbar -->
   <div class="navbar-fixed">
-    <nav class="indigo darken-4" role="navigation">
+    <nav class="indigo darken-4">
       <div class="nav-wrapper">
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a class="white-text" href="#">About</a></li>
           <li><a class="white-text" href="#themes">Themes</a></li>
-          <li><a class="white-text" href="#probstatement">Problem Statements</a></li>
+          <li><a class="white-text" href="#probstatements">Problem Statements</a></li>
           <li><a class="white-text" href="#prizes">Prizes</a></li>
           <li><a class="white-text" href="https://tinyurl.com/36HrsHackathon">Registration</a></li>
-          <li><a class="white-text" href="#comtce">Organising Committee TCE</a></li>
-          <li><a class="white-text" href="#comhbtu">Organising Committee HBTU</a></li>
+          <li><a class="white-text" href="#committees">Organising Committee</a></li>
         </ul>
       </div>
     </nav>
-
-    <ul id="nav-mobile" class="sidenav red darken-4">
-      <li><a class="white-text" href="#">About</a></li>
-      <li><a class="white-text" href="#themes">Themes</a></li>
-      <li><a class="white-text" href="#probstatement">Problem Statements</a></li>
-      <li><a class="white-text" href="#prizes">Prizes</a></li>
-      <li><a class="white-text" href="https://tinyurl.com/36HrsHackathon">Registration</a></li>
-      <li><a class="white-text" href="#comtce">Organising Committee TCE</a></li>
-      <li><a class="white-text" href="#comhbtu">Organising Committee HBTU</a></li>
-    </ul>
   </div>
+
+  <ul id="nav-mobile" class="sidenav red darken-4">
+    <li><a class="sidenav-close white-text" href="#">About</a></li>
+    <li><a class="sidenav-close white-text" href="#themes">Themes</a></li>
+    <li><a class="sidenav-close white-text" href="#probstatements">Problem Statements</a></li>
+    <li><a class="sidenav-close white-text" href="#prizes">Prizes</a></li>
+    <li><a class="sidenav-close white-text" href="https://tinyurl.com/36HrsHackathon">Registration</a></li>
+    <li><a class="sidenav-close white-text" href="#committees">Organising Committee</a></li>
+  </ul>
 
   <!-- Header Image -->
   <div id="index-banner" class="parallax-container">
@@ -48,7 +47,7 @@
         <br><br>
       </div>
     </div>
-    <div class="parallax"><img src="images/tce.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img class="responsive-img" src="images/tce.jpg" alt="Unsplashed background img 1"></div>
   </div>
 
 
@@ -77,8 +76,8 @@
         <div class="col s12 m4">
           <div class="card red darken-4">
             <div class="card-image">
-              <img class="white" style="padding: 0px 4rem 0px 4rem;border-radius: 6px;"
-                src="images/teqip.png" alt="TEQIP" height="100" width="100">
+              <img class="white" style="padding: 0px 4rem 0px 4rem;border-radius: 6px;" src="images/teqip.png"
+                alt="TEQIP" height="100" width="100">
               <div class="card-title"></div>
             </div>
             <div class="card-content white-text" style="text-align: justify;">
@@ -98,8 +97,8 @@
         <div class="col s12 m4">
           <div class="card red darken-4">
             <div class="card-image">
-              <img class="white" style="padding: 0px 5rem 0px 5rem;border-radius: 6px;"
-                src="images/tlogo.png" alt="TCE" height="100" width="100">
+              <img class="white" style="padding: 0px 5rem 0px 5rem;border-radius: 6px;" src="images/tlogo.png" alt="TCE"
+                height="100" width="100">
               <div class="card-title"></div>
             </div>
             <div class="card-content white-text" style="text-align: justify;">
@@ -120,8 +119,8 @@
         <div class="col s12 m4 ">
           <div class="card red darken-4">
             <div class="card-image">
-              <img class="white" style="padding: 0.5rem 6rem 0.5rem 6rem;border-radius: 6px;"
-                src="images/hlogo.png" alt="HBTU" height="100" width="100">
+              <img class="white" style="padding: 0.5rem 6rem 0.5rem 6rem;border-radius: 6px;" src="images/hlogo.png"
+                alt="HBTU" height="100" width="100">
               <div class="card-title"></div>
             </div>
             <div class="card-content white-text" style="text-align: justify;">
@@ -154,42 +153,489 @@
     <div class="section">
 
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
+        <div class="col s12 center-align">
           <h4 class="white-text">Important Dates</h4>
-
           <div class="row">
-            <div class="col s4">
-              <div class="card indigo darken-4">
-                <p class="center-align white-text ">Release Of Problem Statements</p>
-                <p class="white-text">03.Nov.2019</p>
-
+            <!-- November 2019 -->
+            <div class="col s12 m6">
+              <div class="main-container-wrapper" style="min-height: auto;">
+                <main>
+                  <div class="calendar-container hide-on-small-and-down">
+                    <div class="calendar-container__header">
+                      <button class="calendar-container__btn calendar-container__btn--left" title="Previous">
+                        <i class="icon ion-ios-arrow-back"></i>
+                      </button>
+                      <div class="calendar-container__title" style="font-size: larger;">November 2019</div>
+                      <button class="calendar-container__btn calendar-container__btn--right" title="Next">
+                        <i class="icon ion-ios-arrow-forward"></i>
+                      </button>
+                    </div>
+                    <div class="calendar-container__body">
+                      <div class="calendar-table">
+                        <div class="calendar-table__header">
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">S</div>
+                            <div class="calendar-table__col">M</div>
+                            <div class="calendar-table__col">T</div>
+                            <div class="calendar-table__col">W</div>
+                            <div class="calendar-table__col">T</div>
+                            <div class="calendar-table__col">F</div>
+                            <div class="calendar-table__col">S</div>
+                          </div>
+                        </div>
+                        <div class="calendar-table__body">
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col calendar-table__inactive">
+                              <div class="calendar-table__item">
+                                <span>27</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col calendar-table__inactive">
+                              <div class="calendar-table__item">
+                                <span>28</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col calendar-table__inactive">
+                              <div class="calendar-table__item">
+                                <span>29</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col calendar-table__inactive">
+                              <div class="calendar-table__item">
+                                <span>30</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>31</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>1</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>2</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col calendar-table__event">
+                              <div class="calendar-table__item">
+                                <span>3</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>4</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>5</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>6</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>7</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>8</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>9</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>10</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>11</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>12</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>13</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>14</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>15</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>16</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>17</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>18</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>19</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>20</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>21</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>22</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>23</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>24</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>25</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>26</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>27</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>28</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>29</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col calendar-table__event">
+                              <div class="calendar-table__item">
+                                <span>30</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="events-container">
+                    <ul class="events__list">
+                      <li class="events__item">
+                        <div class="events__item--left">
+                          <span class="events__name" style="font-size: 110%">Release of problem statements</span>
+                          <!-- <span class="events__date"></span> -->
+                        </div>
+                        <span class="events__tag"
+                          style="width: 70px;font-size: 110%;background: #f44336; margin: 5px;">3-Nov</span>
+                      </li>
+                      <li class="events__item">
+                        <div class="events__item--left">
+                          <span class="events__name" style="font-size: 110%">Last date for abstract submission</span>
+                          <!-- <span class="events__date"></span> -->
+                        </div>
+                        <span class="events__tag pulsate"
+                          style="width: 75px; font-size: 110%;background: #f44336;margin: 5px;">30-Nov</span>
+                      </li>
+                    </ul>
+                  </div>
+                </main>
               </div>
             </div>
-
-            <div class="col s4">
-              <div class="card indigo darken-4">
-                <p class="center-align white-text ">Last Date for Abstract Submission</p>
-                <p class="white-text">30.Nov.2019</p>
-
+            <!-- December 2019 -->
+            <div class="col s12 m6">
+              <div class="main-container-wrapper" style="min-height: auto;">
+                <main>
+                  <div class="calendar-container hide-on-small-and-down">
+                    <div class="calendar-container__header">
+                      <button class="calendar-container__btn calendar-container__btn--left" title="Previous">
+                        <i class="icon ion-ios-arrow-back"></i>
+                      </button>
+                      <div class="calendar-container__title" style="font-size: larger;">December 2019</div>
+                      <button class="calendar-container__btn calendar-container__btn--right" title="Next">
+                        <i class="icon ion-ios-arrow-forward"></i>
+                      </button>
+                    </div>
+                    <div class="calendar-container__body">
+                      <div class="calendar-table">
+                        <div class="calendar-table__header">
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">S</div>
+                            <div class="calendar-table__col">M</div>
+                            <div class="calendar-table__col">T</div>
+                            <div class="calendar-table__col">W</div>
+                            <div class="calendar-table__col">T</div>
+                            <div class="calendar-table__col">F</div>
+                            <div class="calendar-table__col">S</div>
+                          </div>
+                        </div>
+                        <div class="calendar-table__body">
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>1</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>2</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>3</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>4</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>5</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>6</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>7</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>8</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>9</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>10</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>11</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>12</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>13</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>14</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>15</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>16</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>17</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>18</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>19</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>20</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>21</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>22</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>23</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>24</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>25</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>26</span>
+                              </div>
+                            </div>
+                            <div
+                              class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
+                              <div class="calendar-table__item">
+                                <span>27</span>
+                              </div>
+                            </div>
+                            <div
+                              class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
+                              <div class="calendar-table__item">
+                                <span>28</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="calendar-table__row">
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>29</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>30</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col">
+                              <div class="calendar-table__item">
+                                <span>31</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col calendar-table__inactive">
+                              <div class="calendar-table__item">
+                                <span>1</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col calendar-table__inactive">
+                              <div class="calendar-table__item">
+                                <span>2</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col calendar-table__inactive">
+                              <div class="calendar-table__item">
+                                <span>3</span>
+                              </div>
+                            </div>
+                            <div class="calendar-table__col calendar-table__inactive">
+                              <div class="calendar-table__item">
+                                <span>4</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="events-container">
+                    <ul class="events__list">
+                      <li class="events__item">
+                        <div class="events__item--left" style="width: calc(100% - 176px)">
+                          <span class="events__name" style="font-size: 110%">Hackathon</span>
+                          <!-- <span class="events__date"></span> -->
+                        </div>
+                        <span class="events__tag" style="width: 170px; font-size: 110%;background: #f44336;">
+                          27-Dec to 28-Dec</span>
+                      </li>
+                    </ul>
+                  </div>
+                </main>
               </div>
             </div>
-
-            <div class="col s4">
-              <div class="card indigo darken-4">
-                <p class="center-align white-text ">Hackathon</p>
-                <p class="white-text">27.Dec.2019 and 28.Dec.2019</p>
-
-              </div>
-            </div>
-
-
           </div>
-
         </div>
       </div>
-
     </div>
+
+  </div>
   </div>
 
   <!-- Prizes -->
@@ -234,424 +680,426 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 class=" white-text">Themes</h4>
           <div class="row">
-            <div class="col s4 m2" style="padding-left: 0.25rem;padding-right: 0.25rem;">
-              <div class="card">
+            <div class="col s4 m2 offset-m1" style="padding-left: 0.25rem;padding-right: 0.25rem;">
+              <div class="card hoverable">
                 <p class="center-align ">IoT</p>
                 <img src="images/IOT.jpg" alt="" height="90" width="90">
               </div>
             </div>
             <div class="col s4 m2" style="padding-left: 0.25rem;padding-right: 0.25rem;">
-              <div class="card">
+              <div class="card hoverable">
                 <p class="center-align ">Virtual Reality</p>
                 <img src="images/VR.jpg" alt="" height="90" width="90">
               </div>
             </div>
             <div class="col s4 m2" style="padding-left: 0.25rem;padding-right: 0.25rem;">
-              <div class="card">
-                <p class="center-align ">Machine Learning</p>
+              <div class="card hoverable">
+                <p class="center-align">AI/ML</p>
                 <img src="images/ML.png" alt="" height="90" width="90">
               </div>
             </div>
-            <div class="col s4 m2" style="padding-left: 0.25rem;padding-right: 0.25rem;">
-              <div class="card">
+            <div class="col s4 offset-s2 m2" style="padding-left: 0.25rem;padding-right: 0.25rem;">
+              <div class="card hoverable">
                 <p class="center-align ">Data Analytics</p>
                 <img src="images/DA.png" alt="" height="90" width="90">
               </div>
             </div>
             <div class="col s4 m2" style="padding-left: 0.25rem;padding-right: 0.25rem;">
-              <div class="card">
+              <div class="card hoverable">
                 <p class="center-align ">Block Chain</p>
                 <img src="images/BC.png" alt="" height="90" width="90">
               </div>
             </div>
-            <div class="col s4 m2" style="padding-left: 0.25rem;padding-right: 0.25rem;">
-              <div class="card">
-                <p class="center-align ">Mobile Technology</p>
-                <img src="images/MT.jpg" alt="" height="90" width="90">
-              </div>
-            </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
 
   <!-- Problem Statements -->
-  <div class="container center-align" id="probstatement">
+  <div class="container center-align" id="probstatements">
     <div class="section">
       <h4 class="white-text">Problem Statements</h4>
       <div class="row">
         <div class="col s12">
           <div class="card">
             <blockquote class="blockquote card-body">
-              <div class="card-title">Use the Abstract format
+              <div class="card-title">Use the abstract format
                 <a
                   href="https://github.com/tcehbtuhackathon/tcehbtuhackathon.github.io/blob/master/AbstractFormat.docx?raw=true">
-                  here</a>- Submit the same for Registration</div>
+                  here</a>. Submit the same for registration</div>
           </div>
         </div>
-        <div class="col s12">
-          <div class="card ">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title"><b>1.Reduce, Reuse & Recycle the Water used in Urban Homes & Apartments</b>
-              </h5>
-              <p class="left-align"><b>Problem Description:</b></p>
-              <p style="text-align: justify;">There is lot of grey water generated from home/commercial buildings.
-                Daily
-                a home consisting of
-                four members consume and utilize at least 100 to 150 litres of water per day for bathing, toilet,
-                kitchen, drinking and washing clothes etc.. Other than these we use water for cleaning the
-                vehicles, house and gardening too. Except for drinking all the water that we use say for kitchen
-                vessel washing, cloth washing, bathing goes wasted into the sewers or drainage. This water can be
-                recycled and reused. The day is not so near where we humanity are going to face a severe water
-                threat. And currently no one is even bothered about it and lack of awareness among the people is a
-                major problem.</p>
-              <footer class="blockquote-footer">
-                <p><b>Solution Excepted:</b>
-                  <p>
-                    <p>A Device for collecting the waste water from homes and recycling it and reusing it.
-                      An application program for monitoring the water usage similar to that of current EB bill
-                      usage in a home.
-                      Redesigning the existing taps, showers, flush systems & pipe lines for effective reduction
-                      of unwanted water consumption.</p>
-
-              </footer>
-            </blockquote>
-
-
-          </div>
-        </div>
-        <div class="col s12">
-          <div class="card ">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title"><b>2. Household or Commercial waste disposal system</b></h5>
-              <p><b>Problem Description:</b></p>
-              <p>Build an Eco-Friendly Sector based garbage collector which would encourage the citizens to
-                dispose the garbage in the right place and get rewarded for the same</p>
-              <footer class="blockquote-footer">
-                <p><b>Solution Excepted:</b>
-                  <p>
-                    <p>Solutions for Effective Management of Household wastages by the Government
-                      A device for Segregation of Biodegradable and Non Biodegradable waste
-                      A device for every household for compressing the wastages into small cubes and then
-                      incinerating them in a closed chamber</p>
-              </footer>
-            </blockquote>
-
-          </div>
-        </div>
-        <div class="col s12">
-          <div class="card ">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title"><b>3. Eco –Friendly Area/Sector based waste college system with reward
-                  points</b></b></h5>
-
-              <p><b>Problem Description:</b></p>
-              <p>There is lot of grey water generated from home/commercial buildings. Daily a home consisting of
-                four members consume and utilize at least 100 to 150 litres of water per day for bathing, toilet,
-                kitchen, drinking and washing clothes etc.. Other than these we use water for cleaning the
-                vehicles, house and gardening too. Except for drinking all the water that we use say for kitchen
-                vessel washing, cloth washing, bathing goes wasted into the sewers or drainage. This water can be
-                recycled and reused. The day is not so near where we humanity are going to face a severe water
-                threat. And currently no one is even bothered about it and lack of awareness among the people is a
-                major problem.</p>
-              <footer class="blockquote-footer">
-
-              </footer>
-            </blockquote>
-
-          </div>
-        </div>
-        <div class="col s12">
-          <div class="card ">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title"><b>4. Effective use of Food remains in hotels, Restaurants, Food shops,
-                  Functions, Hostels & Houses</b></h5>
-              <p><b>Problem Description:</b></p>
-              <p>A lot of people are below the poverty line in India. A large sector of people in India are
-                starving for food and do not even get a square meal a day. whereas on the other hand a lot of food
-                is getting wasted from hotels, restaurants, food shops, functions, hostels and even in our houses.
-                Hence these food remains can be given to those people below the poverty line who aches for food.
-              </p>
-              <footer class="blockquote-footer">
-                <p><b>Solution Excepted:</b>
-                  <p>
-                    <p>Developing application (similar to swiggy, Zomato and Uber eats) that may
-                      connect the person with food remains with NGO and volunteers who are willing to deliver the
-                      food to the poor people near the locality.</p>
-
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-        <div class="col s12">
-          <div class="card ">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title"><b>5. Eliminating Deadly Wastes through 5S  - Education through Gaming</b>
-              </h5>
-
-              <p><b>Problem Description:</b></p>
-              <p>5S is a philosophy, a way of thinking which focuses on organizing and managing the workspace and
-                Home by eliminating 8 Wastes while improving quality and safety. The 8 most common forms of waste
-                can be remembered using the mnemonic "DOWNTIME"
-                <li align="left">Defective Production</li>
-                <li align="left">Overproduction</li>
-                <li align="left">Waiting</li>
-                <li align="left">Non-used Employee Talent</li>
-                <li align="left">Transportation</li>
-                <li align="left">Inventory</li>
-                <li align="left">Motion Excessive (Over Processing)</li>
-              </p>
-              <footer class="blockquote-footer">
-                <p><b>Solution Excepted:</b>
-                  <p>
-                    <p>Development of Gaming Application to educate about 5S methodology using Information
-                      Technology Trends for College / Home / Hostel in maximum of 5 levels.</p>
-
-
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-        <div class="col s12">
-
-          <div class="card ">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title">&nbsp &nbsp &nbsp &nbsp &nbsp <b>6.Sewage tank automated blockage cleaning
-                  removal&nbsp &nbsp &nbsp &nbsp </b></h5>
-
-
-
-              <p><b>Problem Description:</b></p>
-              <p>Identify an automated way to clean sewage tanks and remove any blockage present in the tank&nbsp
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp</p>
-              <footer class="blockquote-footer">
-
-
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-        <div class="col s12">
-
-          <div class="card ">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title"><b>7. Plastic waste Management in Commercial Building</b></h5>
-
-
-
-              <p><b>Problem Description:</b></p>
-              <p>Assume the plastic juice/water bottles used in commercial buildings.
-                Identify ways to automate the process of collection and disposal of plastic.
-              </p>
-              <footer class="blockquote-footer">
-
-
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-        <div class="col s12">
-          <div class="card ">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title"><b>8. Effective utilization of urban waste</b></h5>
-
-
-              <p><b>Problem Description:</b></p>
-              <p>Urban waste may consist of both industrial as well as residential waste. Whether such commingled
-                waste can be used as an alternative material for some other resources, which ultimately reduces
-                cost, enhances the resource consumption</p>
-              <footer class="blockquote-footer">
-
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-        <div class="col s12">
-          <div class="card">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title"><b>9. Monitoring of Sanitation</b></h5>
-
-
-
-              <p><b>Problem Description:</b></p>
-              <p>Every year a lot of people suffer from various diseases due to lack of sanitation. A major reason
-                for the outbreak of these diseases is due to lack of sanitation in waste management and drinking
-                water,still there is no prevailing method that can effectively detect and monitor the outbreak and
-                spreading of water borne diseases</p>
-              <footer class="blockquote-footer">
-                <p><b>Solution Excepted:</b>
-                  <p>
-                    <p>Design a system that will analyse the properties of water and help to improve sanitation
-                      facilities by monitoring waste management and also by detecting outbreak and spreading of
-                      water-borne diseases, thereby ensuring sanitation to create a healthy world.</p>
-
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-        <div class="col s12">
-          <div class="card ">
-            <blockquote class="blockquote mb-0 card-body">
-              <h5 class="card-title"><b>10. Sorting of waste in the collection point</b></h5>
-              <p><b>Problem Description:</b></p>
-              <p>Waste sorting is the process by which waste is separated into different elements in the
-                collection point itself. It is expected to have the solutions for waste sorting at the household
-                and collected through curbside collection schemes. The solution can be a software, hardware or
-                mixing of both with or without IoT enabled </p>
-              <footer class="blockquote-footer">
-
-
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <ul class="collapsible">
+          <li class="active">
+            <div class="collapsible-header"><i class="material-icons">blur_on</i>
+              <div class="left-align">
+                <b>1. Reduce, Reuse & Recycle the Water used in Urban Homes & Apartments</b>
+              </div>
+              <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+            </div>
+            <div class="collapsible-body white">
+              <blockquote class="blockquote mb-0 card-body">
+                <p class="left-align"><b>Problem Description:</b></p>
+                <p style="text-align: justify;">
+                  There is lot of grey water generated from home/commercial buildings. Daily a home
+                  consisting of four members consume and utilize at least 100 to 150 litres of water per day for
+                  bathing, toilet,
+                  kitchen, drinking and washing clothes etc.. Other than these we use water for cleaning the
+                  vehicles, house and gardening too. Except for drinking all the water that we use say for kitchen
+                  vessel washing, cloth washing, bathing goes wasted into the sewers or drainage. This water can be
+                  recycled and reused. The day is not so near where we humanity are going to face a severe water
+                  threat. And currently no one is even bothered about it and lack of awareness among the people is a
+                  major problem.</p>
+                <footer class="blockquote-footer">
+                  <p class="left-align"><b>Solution Expected:</b></p>
+                  <p style="text-align: justify;">A Device for collecting the waste water from homes and recycling it
+                    and
+                    reusing it.
+                    An application program for monitoring the water usage similar to that of current EB bill
+                    usage in a home.
+                    Redesigning the existing taps, showers, flush systems & pipe lines for effective reduction
+                    of unwanted water consumption.</p>
+                </footer>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">blur_on</i>
+              <div class="left-align">
+                <b>2. Household or Commercial waste disposal system</b>
+              </div>
+              <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+            </div>
+            <div class="collapsible-body white">
+              <blockquote class="blockquote mb-0 card-body">
+                <p class="left-align"><b>Problem Description:</b></p>
+                <p style="text-align: justify;">
+                  Build an Eco-Friendly Sector based garbage collector which would encourage the citizens to
+                  dispose the garbage in the right place and get rewarded for the same</p>
+                <footer class="blockquote-footer">
+                  <p class="left-align"><b>Solution Expected:</b></p>
+                  <p style="text-align: justify;">
+                    Solutions for Effective Management of Household wastages by the Government
+                    A device for Segregation of Biodegradable and Non Biodegradable waste
+                    A device for every household for compressing the wastages into small cubes and then
+                    incinerating them in a closed chamber</p>
+                </footer>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">blur_on</i>
+              <div class="left-align">
+                <b>3. Eco–Friendly Area/Sector based Waste Collection System with Reward Points</b>
+              </div>
+              <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+            </div>
+            <div class="collapsible-body white">
+              <blockquote class="blockquote mb-0 card-body">
+                <p class="left-align"><b>Problem Description:</b></p>
+                <p style="text-align: justify;">
+                  There is lot of grey water generated from home/commercial buildings. Daily a home consisting of
+                  four members consume and utilize at least 100 to 150 litres of water per day for bathing, toilet,
+                  kitchen, drinking and washing clothes etc.. Other than these we use water for cleaning the
+                  vehicles, house and gardening too. Except for drinking all the water that we use say for kitchen
+                  vessel washing, cloth washing, bathing goes wasted into the sewers or drainage. This water can be
+                  recycled and reused. The day is not so near where we humanity are going to face a severe water
+                  threat. And currently no one is even bothered about it and lack of awareness among the people is a
+                  major problem.</p>
+                <footer class="blockquote-footer">
+                </footer>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">blur_on</i>
+              <div class="left-align">
+                <b>4. Effective use of Food remains in hotels, Restaurants, Food shops,
+                  Functions, Hostels & Houses</b>
+              </div>
+              <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+            </div>
+            <div class="collapsible-body white">
+              <blockquote class="blockquote mb-0 card-body">
+                <p class="left-align"><b>Problem Description:</b></p>
+                <p style="text-align: justify;">
+                  A lot of people are below the poverty line in India. A large sector of people in India are
+                  starving for food and do not even get a square meal a day. whereas on the other hand a lot of food
+                  is getting wasted from hotels, restaurants, food shops, functions, hostels and even in our houses.
+                  Hence these food remains can be given to those people below the poverty line who aches for food.
+                </p>
+                <footer class="blockquote-footer">
+                  <p class="left-align"><b>Solution Expected:</b></p>
+                  <p style="text-align: justify;">
+                    Developing application (similar to swiggy, Zomato and Uber eats) that may
+                    connect the person with food remains with NGO and volunteers who are willing to deliver the
+                    food to the poor people near the locality.</p>
+                </footer>
+              </blockquote>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header"><i class="material-icons">blur_on</i>
+              <div class="left-align">
+                <b>5. Eliminating Deadly Wastes through 5S - Education through Gaming</b>
+              </div>
+              <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+            </div>
+            <div class="collapsible-body white">
+              <blockquote class="blockquote mb-0 card-body">
+                <p class="left-align"><b>Problem Description:</b></p>
+                <p style="text-align: justify;">
+                  5S is a philosophy, a way of thinking which focuses on organizing and managing the workspace and
+                  Home by eliminating 8 Wastes while improving quality and safety. The 8 most common forms of waste
+                  can be remembered using the mnemonic "DOWNTIME"
+          <li align="left">Defective Production</li>
+          <li align="left">Overproduction</li>
+          <li align="left">Waiting</li>
+          <li align="left">Non-used Employee Talent</li>
+          <li align="left">Transportation</li>
+          <li align="left">Inventory</li>
+          <li align="left">Motion Excessive (Over Processing)</li>
+          </p>
+          <footer class="blockquote-footer">
+            <p class="left-align"><b>Solution Expected:</b></p>
+            <p style="text-align: justify;">
+              Development of Gaming Application to educate about 5S methodology using Information
+              Technology Trends for College / Home / Hostel in maximum of 5 levels.</p>
+          </footer>
+          </blockquote>
       </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">blur_on</i>
+          <div class="left-align">
+            <b>6. Sewage tank automated blockage cleaning removal</b>
+          </div>
+          <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+        </div>
+        <div class="collapsible-body white">
+          <blockquote class="blockquote mb-0 card-body">
+            <p class="left-align"><b>Problem Description:</b></p>
+            <p style="text-align: justify;">Identify an automated way to clean sewage tanks and remove any blockage
+              present in the tank.</p>
+            <br>
+            <footer class="blockquote-footer">
+            </footer>
+          </blockquote>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">blur_on</i>
+          <div class="left-align">
+            <b>7. Plastic waste Management in Commercial Building</b>
+          </div>
+          <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+        </div>
+        <div class="collapsible-body white">
+          <blockquote class="blockquote mb-0 card-body">
 
-
-
+            <p class="left-align"><b>Problem Description:</b></p>
+            <p style="text-align: justify;">Assume the plastic juice/water bottles used in commercial buildings.
+              Identify ways to automate the process of collection and disposal of plastic.
+              <br>
+            </p>
+            <footer class="blockquote-footer">
+            </footer>
+          </blockquote>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">blur_on</i>
+          <div class="left-align">
+            <b>8. Effective utilization of urban waste</b>
+          </div>
+          <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+        </div>
+        <div class="collapsible-body white">
+          <blockquote class="blockquote mb-0 card-body">
+            <p class="left-align"><b>Problem Description:</b></p>
+            <p style="text-align: justify;">
+              Urban waste may consist of both industrial as well as residential waste. Whether such commingled
+              waste can be used as an alternative material for some other resources, which ultimately reduces
+              cost, enhances the resource consumption</p>
+            <footer class="blockquote-footer">
+            </footer>
+          </blockquote>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">blur_on</i>
+          <div class="left-align">
+            <b>9. Monitoring of Sanitation</b>
+          </div>
+          <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+        </div>
+        <div class="collapsible-body white">
+          <blockquote class="blockquote mb-0 card-body">
+            <p class="left-align"><b>Problem Description:</b></p>
+            <p style="text-align: justify;">Every year a lot of people suffer from various diseases due to lack of
+              sanitation. A major reason
+              for the outbreak of these diseases is due to lack of sanitation in waste management and drinking
+              water,still there is no prevailing method that can effectively detect and monitor the outbreak and
+              spreading of water borne diseases</p>
+            <footer class="blockquote-footer">
+              <p class="left-align"><b>Solution Expected:</b></p>
+              <p style="text-align: justify;">
+                Design a system that will analyse the properties of water and help to improve sanitation
+                facilities by monitoring waste management and also by detecting outbreak and spreading of
+                water-borne diseases, thereby ensuring sanitation to create a healthy world.</p>
+            </footer>
+          </blockquote>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">blur_on</i>
+          <div class="left-align">
+            <b>10. Sorting of waste in the collection point</b>
+          </div>
+          <span class="badge"><i class="material-icons">keyboard_arrow_down</i></span>
+        </div>
+        <div class="collapsible-body white">
+          <blockquote class="blockquote mb-0 card-body">
+            <p class="left-align"><b>Problem Description:</b></p>
+            <p style="text-align: justify;">
+              Waste sorting is the process by which waste is separated into different
+              elements in the collection point itself. It is expected to have the solutions
+              for waste sorting at the household and collected through curbside collection schemes.
+              The solution can be a software, hardware or
+              mixing of both with or without IoT enabled </p>
+            <footer class="blockquote-footer">
+            </footer>
+          </blockquote>
+        </div>
+      </li>
+      </ul>
 
     </div>
+  </div>
   </div>
 
   <!-- Organising Committee Members -->
   <div class="section">
-    <div class="container" id="comtce">
-
+    <div class="container" id="committees">
       <div class="row">
-        <div class="col s12 center">
+        <div class="col s12 m6" style="padding: 0px;">
           <div class="card hoverable white">
-            <div class="card-title black-text center"><b>Organising Committee Members TCE</b></div>
+            <div class="card-title black-text center"><b>Organising Committee - TCE</b></div>
             <div class="card-content left-align red-text text-darken-4 ">
               <div class="row">
-                <div class="col s6 left-align ">
-                  <center><b>CHEIF PATRON</b><br>Mr.Karumuttu T.Kannan,Chairman & Correspondent
+                <div class="col s12 m7">
+                  <div class="center-align"><b class="committee-title">CHEIF PATRON</b>
+                    <div class="committee-member-name"><b>Mr.Karumuttu T.Kannan</b>, Chairman & Correspondent</div>
+                  </div>
                 </div>
-
-                <div class="col s6 right-align">
-                  <center><b>PATRON</b><br>Dr. V. Abhai Kumar,Principal
+                <div class="col s12 m5">
+                  <div class="center-align"><b class="committee-title">PATRON</b>
+                    <div class="committee-member-name"><b>Dr. V. Abhai Kumar</b>, Principal</div>
+                  </div>
                 </div>
               </div>
-              <br>
               <div class="row">
-                <div class="col s6 left-align ">
-                  <center><b>TEQIP COORDINATOR</b><br>Dr.Palaninatha Raja,Dean Planning and Development
+                <div class="col s12 m6">
+                  <div class="center-align"><b class="committee-title">TEQIP COORDINATOR</b>
+                    <div class="committee-member-name"><b>Dr.Palaninatha Raja</b>, Dean - Planning and
+                      Development</div>
+                  </div>
                 </div>
-                <div class="col s6 right-align">
-                  <center><b>HACKATHON COORDINATOR</b><br>Dr.N.Kamaraj,Dean Students
+                <div class="col s12 m6">
+                  <div class="center-align"><b class="committee-title">HACKATHON COORDINATOR</b>
+                    <div class="committee-member-name"><b>Dr.N.Kamaraj</b>, Dean - Students</div>
+                  </div>
                 </div>
-                <br>
-                <br>
-                <center>
-                  <div class=" center"><b>NODAL PERSON</b> <br>Dr.C.Deisy,HOD/IT</div>
-                  <br>
-                  <div class="card-title black-text center"><b>Staff Coordinators TCE</b></div>
-                  <div class=" center"><b>Ms.S.Karthiga</b>,Assistant Professor, IT</div>
-                  <div class=" center"><b>Ms.K.Indira</b>,Assistant Professor, IT</div>
-                  <div class=" center"><b>Ms.C.V.Nisha Angeline</b>,Assistant Professor, IT</div>
-                  <div class=" center"><b>Mr.M.Thangavel</b>,Assistant Professor, IT</div>
-                  <div class=" center"><b>Mrs.Raja Lavanya</b>,Assistant Professor, CSE</div>
-                  <div class=" center"><b>Ms.S.Sivasangari</b>,Assistant Professor, CIVIL</div>
-                  <div class=" center"><b>Dr.K.Hariharan</b>,Associate Professor, ECE</div>
-                  <div class=" center"><b>Dr.R.Helen</b>,Assistant Professor, EEE</div>
-                  <div class=" center"><b>Mr.B.Sankar</b>,Assistant Professor,MECH</div>
-                  <div class=" center"><b>Mr.S.Parthasarathi</b>,Assistant Professor,MECHT</div>
+              </div>
+              <div class="row">
+                <div class="col s12">
+                  <div class="center-align"><b class="committee-title">NODAL PERSON</b>
+                    <div class="committee-member-name"><b>Dr.C.Deisy</b>, HOD, IT</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 center-align"><b class="committee-title">STAFF COORDINATORS</b></div>
+                <div class="col s12 m12">
+                  <div class="committee-member-name"><b>Ms.S.Karthiga</b>, Assistant Professor, IT</div>
+                  <div class="committee-member-name"><b>Ms.K.Indira</b>, Assistant Professor, IT</div>
+                  <div class="committee-member-name"><b>Ms.C.V.Nisha Angeline</b>, Assistant Professor, IT</div>
+                  <div class="committee-member-name"><b>Mr.M.Thangavel</b>, Assistant Professor, IT</div>
+                  <div class="committee-member-name"><b>Mrs.Raja Lavanya</b>, Assistant Professor, CSE</div>
+                  <div class="committee-member-name"><b>Ms.S.Sivasangari</b>, Assistant Professor, CIVIL</div>
+                  <div class="committee-member-name"><b>Dr.K.Hariharan</b>, Associate Professor, ECE</div>
+                  <div class="committee-member-name"><b>Dr.R.Helen</b>, Assistant Professor, EEE</div>
+                  <div class="committee-member-name"><b>Mr.B.Sankar</b>, Assistant Professor, MECH</div>
+                  <div class="committee-member-name"><b>Mr.S.Parthasarathi</b>, Assistant Professor, MECHT</div>
+                </div>
               </div>
             </div>
           </div>
+
+
         </div>
-
-      </div>
-
-    </div>
-
-    <div class="container" id="comhbtu">
-      <div class="row">
-        <div class="col s12 center">
+        <div class="col s12 m6" style="padding-right: 0px;">
           <div class="card hoverable white">
-            <div class="card-title black-text center"><b>Organising Committee Members HBTU</b></div>
-            <div class="card-content left-align red-text text-darken-4  ">
-
+            <div class="card-title black-text center"><b>Organising Committee - HBTU</b></div>
+            <div class="card-content left-align red-text text-darken-4">
               <div class="row">
-                <div class="col s6 left-align ">
-                  <center><b>TEQIP COORDINATOR</b><br>Dr.Raghuraj Singh,Professor
+                <div class="col s12 m6">
+                  <div class="center-align"><b class="committee-title">TEQIP COORDINATOR</b>
+                    <div class="committee-member-name"><b>Dr.Raghuraj Singh</b>, Professor</div>
+                  </div>
                 </div>
-
-                <div class="col s6 right-align">
-                  <center><b>HACKATHON COORDINATOR</b><br>Dr.Narendra Kohli,Professor,Dean,Incubation Hub
+                <div class="col s12 m6">
+                  <div class="center-align"><b class="committee-title">HACKATHON COORDINATOR</b>
+                    <div class="committee-member-name"><b>Dr.Narendra Kohli</b>, Professor, Dean, Incubation Hub
+                    </div>
+                  </div>
                 </div>
-                <br>
-
-
-                <br>
-                <div class="card-title black-text center"><b>Staff Coordinators HBTU</b></div>
-                <br>
-                <div class=" center"><b>Dr.A.K.Shankhwar</b>,Associate Dean,Incubation Hub</div>
-                <div class=" center"><b>Mr.A.K.Rathore</b>,Coordinator , Startup</div>
-                <div class=" center"><b>Prof.Yaduvir Singh</b>,HOD,EEE</div>
-                <div class=" center"><b>Dr.S.K.S.Yadav</b>,Assistant Professor,ME</div>
-                <div class=" center"><b>Dr.P.K.S.Yadav</b>,Assistant Professor,Oil Technology</div>
-                <div class=" center"><b>Dr.Vinod Yadav</b>,Associate Professor,Humanities</div>
-
-
-
-
-
+              </div>
+              <div class="row">
+                <div class="col s12 center-align"><b class="committee-title">STAFF COORDINATORS</b></div>
+                <div class="col s12">
+                  <div class="committee-member-name"><b>Dr.A.K.Shankhwar</b>, Associate Dean, Incubation Hub</div>
+                  <div class="committee-member-name"><b>Mr.A.K.Rathore</b>, Coordinator, Startup</div>
+                  <div class="committee-member-name"><b>Prof.Yaduvir Singh</b>, HOD, EEE</div>
+                  <div class="committee-member-name"><b>Dr.S.K.S.Yadav</b>, Assistant Professor, ME</div>
+                  <div class="committee-member-name"><b>Dr.P.K.S.Yadav</b>, Assistant Professor, Oil Technology
+                  </div>
+                  <div class="committee-member-name"><b>Dr.Vinod Yadav</b>, Associate Professor, Humanities</div>
+                </div>
               </div>
             </div>
           </div>
+
+
         </div>
-
-
       </div>
     </div>
-    <br>
-    <br>
+  </div>
+  </div>
+
+  <div class="container" id="contact">
+    <div class="row ">
+      <div class="card indigo darken-4 hoverable">
+        <div class="card-content white-text">
+          <span class="card-title">Connect</span>
+          <address style="font-size: large">
+            Thiagarajar College of Engineering<br>
+            Madurai<br>
+            Tamil Nadu<br>
+            625015<br>
+            <i class="material-icons">email</i>
+            <a href="mailto:tcehbtuhackathon@gmail.com">tcehbtuhackathon@gmail.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
   </div>
 
   <footer class="page-footer red darken-4 ">
-    <div class="container ">
-      <div class="row ">
-        <div class="col l0 s12">
-          <h5 class="white-text">Thiagarajar College of Engineering</h5>
-          <p class="grey-text text-lighten-4">Thiruparankundram,Madurai</p>
-        </div>
-
-        <div class="col l0 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li class="white-text">tcehbtuhackathon@gmail.com</li>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
     <div class="footer-copyright indigo darken-4">
       <div class="container">
-        Made by Hackathon Team,IT,TCE
+        <div class="right-align">Made by Hackathon Team, IT Department, TCE</div>
       </div>
     </div>
   </footer>

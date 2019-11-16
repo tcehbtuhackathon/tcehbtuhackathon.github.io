@@ -2683,7 +2683,8 @@ a {
 }
 
 blockquote {
-  margin: 20px 0;
+  margin: 5px 0;
+/*   margin: 20px 0; */
   padding-left: 1.5rem;
   border-left: 5px solid #ee6e73;
 }
@@ -4488,26 +4489,29 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  font-family: 'Montserrat', Calibri, Trebuchet, sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
 
 @media only screen and (min-width: 0) {
   html {
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 15px;
   }
 }
 
 @media only screen and (min-width: 992px) {
   html {
-    font-size: 14.5px;
+    /* font-size: 14.5px; */
+    font-size: 15.5px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   html {
-    font-size: 15px;
+    /* font-size: 15px; */
+    font-size: 16px;
   }
 }
 
@@ -5876,7 +5880,8 @@ body.keyboard-focused .dropdown-content li:focus {
   border-bottom: 1px solid #ddd;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 2rem;
+  padding: 0.1rem 2rem;
+  /* padding: 2rem; */
 }
 
 .sidenav .collapsible,
@@ -8477,10 +8482,19 @@ input[type=range]::-ms-thumb {
   visibility: visible;
   -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
           animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-  -webkit-transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s 1s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s;
-  transition: opacity .3s, transform .3s, visibility 0s 1s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s 1s,
+ -webkit-transform .3s;
 }
 
 .tap-target {
@@ -8533,10 +8547,19 @@ input[type=range]::-ms-thumb {
 
 .tap-target-wave::after {
   visibility: hidden;
-  -webkit-transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, visibility 0s, -webkit-transform .3s;
-  transition: opacity .3s, transform .3s, visibility 0s;
-  transition: opacity .3s, transform .3s, visibility 0s, -webkit-transform .3s;
+  -webkit-transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ visibility 0s,
+ -webkit-transform .3s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s;
+  transition: opacity .3s,
+ transform .3s,
+ visibility 0s,
+ -webkit-transform .3s;
   z-index: -1;
 }
 
