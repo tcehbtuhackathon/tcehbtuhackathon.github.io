@@ -30,11 +30,14 @@
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a class="white-text" href="#">About</a></li>
-          <li><a class="white-text" href="#themes">Themes</a></li>
-          <li><a class="white-text" href="#probstatements">Problem Statements</a></li>
-          <li><a class="white-text" href="#prizes">Prizes</a></li>
-          <li><a class="white-text" onclick="ga('send', 'event', 'Registration', 'Registration');" href="https://tinyurl.com/36HrsHackathon">Registration</a></li>
-          <li><a class="white-text" href="#committees">Organising Committee</a></li>
+          <li><a class="white-text" onclick="ga('send', 'event', 'MenuLinks', 'Themes');" href="#themes">Themes</a></li>
+          <li><a class="white-text" onclick="ga('send', 'event', 'MenuLinks', 'Problem Statements');"
+              href="#probstatements">Problem Statements</a></li>
+          <li><a class="white-text" onclick="ga('send', 'event', 'MenuLinks', 'Prizes');" href="#prizes">Prizes</a></li>
+          <li><a class="white-text" onclick="ga('send', 'event', 'MenuLinks', 'Registration');"
+              href="https://tinyurl.com/36HrsHackathon">Registration</a></li>
+          <li><a class="white-text" onclick="ga('send', 'event', 'MenuLinks', 'Committee');"
+              href="#committees">Organising Committee</a></li>
         </ul>
       </div>
     </nav>
@@ -42,11 +45,16 @@
 
   <ul id="nav-mobile" class="sidenav red darken-4">
     <li><a class="sidenav-close white-text" href="#">About</a></li>
-    <li><a class="sidenav-close white-text" href="#themes">Themes</a></li>
-    <li><a class="sidenav-close white-text" href="#probstatements">Problem Statements</a></li>
-    <li><a class="sidenav-close white-text" href="#prizes">Prizes</a></li>
-    <li><a class="sidenav-close white-text" onclick="ga('send', 'event', 'Registration', 'Registration');" href="https://tinyurl.com/36HrsHackathon">Registration</a></li>
-    <li><a class="sidenav-close white-text" href="#committees">Organising Committee</a></li>
+    <li><a class="sidenav-close white-text" onclick="ga('send', 'event', 'MenuLinks', 'Themes');"
+        href="#themes">Themes</a></li>
+    <li><a class="sidenav-close white-text" onclick="ga('send', 'event', 'MenuLinks', 'Problem Statements');"
+        href="#probstatements">Problem Statements</a></li>
+    <li><a class="sidenav-close white-text" onclick="ga('send', 'event', 'MenuLinks', 'Prizes');"
+        href="#prizes">Prizes</a></li>
+    <li><a class="sidenav-close white-text" onclick="ga('send', 'event', 'MenuLinks', 'Registration');"
+        href="https://tinyurl.com/36HrsHackathon">Registration</a></li>
+    <li><a class="sidenav-close white-text" onclick="ga('send', 'event', 'MenuLinks', 'Committee');"
+        href="#committees">Organising Committee</a></li>
   </ul>
 
   <!-- Header Image -->
@@ -57,21 +65,41 @@
   </div>
 
   <!-- Main title -->
-  <div class="card-panel indigo darken-4 white-text">
-    <h4 class="center-align" style="font-weight: bold;">TEQIP-Sponsored</h4>
-    <h3 class="center-align" style="font-weight: bold;">TCE-HBTU 36 HOURS HACKATHON</h3>
+  <div class="section">
+    <div class="card-panel indigo darken-4 white-text">
+      <h4 class="center-align" style="font-weight: bold;">TEQIP-Sponsored</h4>
+      <h3 class="center-align" style="font-weight: bold;">TCE-HBTU 36 HOURS HACKATHON</h3>
 
-    <p style="text-align: justify;">
-      <span style="font-weight: bold;">Thiagarajar College of Engineering, Madurai, Tamil Nadu </span>
-      and <span style="font-weight: bold;">Harcourt Butler Technical University, Kanpur, Uttar Pradesh </span>
-      is conducting 36 hours hackathon between
-      <span style="text-align: center; font-weight: bold;">27-Dec-2019 and 28-Dec-2019 </span>
       <p style="text-align: justify;">
-        The aim of this event is to motivate young talents from both colleges to create interesting solutions
-        for one of the important social needs today - <b> Waste Management in Urban Areas </b>.
-        The hackathon is divided into five broad themes or categories. Participants
-        have to come up with innovative solutions under any one of the themes.
-      </p>
+        <span style="font-weight: bold;">Thiagarajar College of Engineering, Madurai, Tamil Nadu </span>
+        and <span style="font-weight: bold;">Harcourt Butler Technical University, Kanpur, Uttar Pradesh </span>
+        is conducting 36 hours hackathon between
+        <span style="text-align: center; font-weight: bold;">27-Dec-2019 and 28-Dec-2019 </span>
+        <p style="text-align: justify;">
+          The aim of this event is to motivate young talents from both colleges to create interesting solutions
+          for one of the important social needs today - <b> Waste Management in Urban Areas </b>.
+          The hackathon is divided into five broad themes or categories. Participants
+          have to come up with innovative solutions under any one of the themes.
+        </p>
+    </div>
+  </div>
+
+  <!-- Floating buttons -->
+  <div class="fixed-action-btn click-to-toggle">
+    <a class="btn-floating btn-large purple darken-1">
+      <i class="large material-icons">location_searching</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating green tooltipped" data-position="left" data-tooltip="Register"
+          href="https://tinyurl.com/36HrsHackathon" onclick="ga('send', 'event', 'FloatButton', 'Registration');">
+          <i class="material-icons">publish</i></a>
+      </li>
+      <li><a class="btn-floating blue tooltipped" data-position="left" data-tooltip="Download Abstract template"
+          href="https://github.com/tcehbtuhackathon/tcehbtuhackathon.github.io/blob/master/AbstractFormat.docx?raw=true"
+          onclick="ga('send', 'event', 'FloatButton', 'Download Abstract');">
+          <i class="material-icons">get_app</i></a>
+      </li>
+    </ul>
   </div>
 
   <!--   Icon Section   -->
@@ -646,30 +674,16 @@
   <!-- Prizes -->
   <div class="container center-align" id="prizes">
     <div class="section ">
-      <div class="row">
-        <div class="col s12 center">
+         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4 class=" white-text">Prizes</h4>
-          <div class="row ">
-            <div class="col s4 ">
-              <div class="card indigo darken-4">
-                <p class="center-align white-text ">1st Prize - Cash Reward of Rs.40000</p>
-                <img src="images/1p.png" alt="" height="90" width="90">
+               <img class="responsive-img banner-image"  src="images/winorig.jpg" alt="" height="500" width="500">
               </div>
             </div>
 
-            <div class="col s4">
-              <div class="card indigo darken-4">
-                <p class="center-align white-text">2nd Prize - Cash Reward of Rs.20000</p>
-                <img src="images/2.png" alt="" height="90" width="90">
-              </div>
-            </div>
+          
 
-            <div class="col s4">
-              <div class="card indigo darken-4">
-                <p class="center-align white-text ">3rd Prize - Cash Reward of Rs.10000</p>
-                <img src="images/3.png" alt="" height="90" width="90">
-              </div>
+           
             </div>
           </div>
         </div>
@@ -730,8 +744,8 @@
           <div class="card">
             <blockquote class="blockquote card-body">
               <div class="card-title">Use the abstract format
-                <a
-                  href="https://github.com/tcehbtuhackathon/tcehbtuhackathon.github.io/blob/master/AbstractFormat.docx?raw=true">
+                <a href="https://github.com/tcehbtuhackathon/tcehbtuhackathon.github.io/blob/master/AbstractFormat.docx?raw=true"
+                  onclick="ga('send', 'event', 'Problem Statements Section', 'Download Abstract');">
                   here</a>. Submit the same for registration</div>
           </div>
         </div>
