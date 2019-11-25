@@ -104,6 +104,23 @@ footer.page-footer {
   }
 }
 
+.gradientBG {
+  background: linear-gradient(to right, red 50%, blue 50%) !important;
+  background-size: 200% 100% !important;
+  background-position:left bottom;
+  animation: gradientBG 4s ease infinite;
+  -webkit-animation: gradientBG 4s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position:right bottom;
+  }
+  100% { 
+      background-position:left bottom;
+  }
+}
+
 /* Calendar css */
 .main-container-wrapper {
   -webkit-font-smoothing: antialiased;
