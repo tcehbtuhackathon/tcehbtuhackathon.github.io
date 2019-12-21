@@ -42,6 +42,9 @@ p {
     height: 57vh;
     width: 100%;
   }
+  #finalists .carousel.carousel-slider {
+    height: 300px !important;
+  }
 }
 
 @media only screen and (max-width : 600px) {
@@ -51,6 +54,9 @@ p {
   }
   #index-banner .section .banner-image {
     height: 40vh;
+  }
+  #finalists .carousel.carousel-slider {
+    height: 40em !important;
   }
 }
 
